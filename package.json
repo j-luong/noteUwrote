@@ -1,0 +1,27 @@
+{
+  "name": "noteuwrote",
+  "version": "1.0.0",
+  "description": "A note-taking app in vanilla Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurizhuravel/noteUwrote.git"
+  },
+  "keywords": [
+    "notes",
+    "js",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurizhuravel/noteUwrote/issues"
+  },
+  "homepage": "https://github.com/yurizhuravel/noteUwrote#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,1 @@
+var NoteList = this.noteList;

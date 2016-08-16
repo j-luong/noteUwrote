@@ -1,1 +1,7 @@
-document.getElementById("app").innerHTML = "Howdy";
+var app = document.getElementById("app")
+
+
+window.onclick = function() {
+
+app.style.display = "none";
+}

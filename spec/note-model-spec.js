@@ -1,5 +1,5 @@
 var Note        = this.note;
-var Tardigrade  = this.tardigrade;
+var Tardigrade  = this.Tardigrade;
 var noteTest    = new Note("Hello world");
 var tardigrade  = new Tardigrade();
 var describe    = tardigrade.describe;

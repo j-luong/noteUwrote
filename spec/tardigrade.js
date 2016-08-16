@@ -31,5 +31,5 @@
     }
   };
 
-  exports.tardigrade = Tardigrade;
+  exports.Tardigrade = Tardigrade;
 })(this);

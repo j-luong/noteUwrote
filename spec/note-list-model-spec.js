@@ -1,6 +1,6 @@
 var Note        = this.note;
 var NoteList    = this.noteList;
-var Tardigrade  = this.tardigrade;
+var Tardigrade  = this.Tardigrade;
 var expect      = new Tardigrade();
 var describe    = expect.describe;
 var it          = expect.it;

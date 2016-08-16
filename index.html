@@ -17,13 +17,17 @@
           <span style="color:#555;">note</span><b>Ü</b><span style="color:#555;">wrote</span>
         </h1>
 
-        <form>
+        <form class="clearfix">
           <div class="form-group">
             <label for="noteMessage">Your Note</label>
             <textarea name="noteMessage" id="note-message" class="form-control" cols="30" rows="10" placeholder="Type your note here..."></textarea>
           </div>
           <button type="submit" id="save-note-button" class="btn btn-primary pull-right">Save</button>
         </form>
+        <br>
+        <div id="messages" class="well">
+          
+        </div>
       </div>
     </div>
     <script src="note-controller.js"></script>

@@ -1,15 +1,23 @@
 window.onload = function() {
-  var newNoteButton = document.getElementById('save-note-button');
+  var newNoteButton   = document.getElementById('save-note-button');
+  var messageQty      = localStorage.length;
 
   newNoteButton.onclick = function() {
     var message = document.getElementById('note-message').value;
-    localStorage.setItem('message', message);
+    localStorage.setItem(messageQty+1, message);
   };
 
   function loadMessages() {
-    var messages = localStorage.getItem('message');
-
-    document.getElementById('messages').innerHTML = messages;
+    for (var i = 1; i < messageQty+1; i++) {
+      var messages = localStorage.getItem(i);
+      document.getElementById('messages').innerHTML = document.getElementById('messages').innerHTML + '<br>' + messages;
+    }
   }
   loadMessages();
+
+  // var convertToJson = {
+  //   notes: localStorage
+  // };
+  //
+  // console.log(convertToJson);
 };

@@ -14,10 +14,4 @@ window.onload = function() {
     }
   }
   loadMessages();
-
-  // var convertToJson = {
-  //   notes: localStorage
-  // };
-  //
-  // console.log(convertToJson);
 };

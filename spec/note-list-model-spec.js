@@ -1,6 +1,6 @@
-var Note        = require('../note-model').note;
-var NoteList    = require('../note-list-model').noteList;
-var Tardigrade  = require('./tardigrade').tardigrade;
+var Note        = this.note;
+var NoteList    = this.noteList;
+var Tardigrade  = this.tardigrade;
 var expect      = new Tardigrade();
 var describe    = expect.describe;
 var it          = expect.it;
@@ -18,5 +18,5 @@ describe('notes list', function(){
   it('contains correct notes', function(){
     expect.isTrue(noteList.notes[0].message === "Hello");
     expect.isTrue(noteList.notes[1].message === "World");
-  })
+  });
 });

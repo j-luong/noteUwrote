@@ -1,4 +1,4 @@
-var Note = require('./note-model').note;
+var Note = this.note;
 
 (function(exports) {
 

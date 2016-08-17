@@ -7,5 +7,5 @@ Custom testing framework, Tardigrade.
 
 Run tests using
 ```
-node spec/*
+open spec/SpecRunner.html
 ```

@@ -9,7 +9,11 @@ var Note = this.note;
   NoteList.prototype = {
     add: function(message) {
       var note = new Note(message);
-      this.notes.push(note);
+      this.notes.push(note.message);
+    },
+
+    view: function() {
+      return this.notes;
     }
   };
 

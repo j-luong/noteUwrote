@@ -11,6 +11,7 @@ describe('notes list', function(){
   noteList.add("Hello");
   noteList.add("World");
 
+
   it('contains an array of notes', function(){
     expect.isTrue(noteList.notes.length === 2);
   });

@@ -7,10 +7,10 @@
 
   NoteListView.prototype = {
     render: function() {
-      var content      = '<ul>';
+      var content = '<ul>';
       for(i = 0; i < this.noteList.length; i++) {
         content += '<li>' + this.noteList[i] + '</li>';
-      }    
+      }
       content += '</ul>';
       return content;
    }

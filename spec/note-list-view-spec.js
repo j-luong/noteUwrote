@@ -1,12 +1,19 @@
 var NoteListView = this.noteListView;
-var noteView     = new NoteListView();
 var Tardigrade   = this.Tardigrade;
 var expect       = new Tardigrade();
 var describe     = expect.describe;
 var it           = expect.it;
+var NoteList     = this.noteList;
 
-// describe('note list view', function(){
-//   it('returns a string', function(){
-//     expect.isTrue(noteView.render() === "<ul><li>Hello</li></ul>");
-//   });
-// });
+var noteList = new NoteList();
+
+noteList.add("Hello");
+noteList.add("World");
+
+describe('note list view', function(){
+  var noteView = new NoteListView(noteList.view());
+
+  it('returns a string', function(){
+    expect.isTrue(noteView.render() === "<ul><li>Hello</li><li>World</li></ul>");
+  });
+});

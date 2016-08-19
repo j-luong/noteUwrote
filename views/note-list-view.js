@@ -9,7 +9,7 @@
     renderNotes: function() {
       var content = '<ul>';
       for(i = 0; i < this.noteList.length; i++) {
-        content += '<li>' + this.noteList[i] + '</li>';
+        content += '<li>' + this.noteList[i].substring(0, 20) + '</li>';
       }
       content += '</ul>';
       return content;

@@ -3,32 +3,19 @@ var expect       = new Tardigrade();
 var describe     = expect.describe;
 var it           = expect.it;
 
-
-function setUp(callback) {
-  window.onload = function() {
-  document.getElementById('note-message').value = "Hello";
-  clickButton();
-  callback();
-};
-}
-
-function clickButton() {
-  document.getElementById('save-note-button').click();
-}
-
 describe('adding a new note', function() {
+  it('note contains "Hello"', function(){
+    document.getElementById('note-message').value = "Hello";
+    document.getElementById('save-note-button').addEventListener("click", function(clickEvent) {
+      clickEvent.preventDefault();
+    });
+    document.getElementById('save-note-button').click();
 
-  it('saves and shows a note', function(){
-    setUp();
-      document.setTimeout(function (){expect.isTrue(document.getElementById("messages").innerHTML === "Hello");}, 500);
+    expect.isTrue(document.getElementById("messages").innerHTML === "Hello");
   });
-});
 
-var Test = function() {
-  expect.isTrue(document.getElementById("messages").innerHTML === "Hello");
-};
-
-
-setUp(function() {
-  Test();
+  // it('homepage contains "noteÜwrote"', function(){
+  //   console.log("CONTENTS" + document.querySelector("h1").textContent);
+  //   expect.isTrue(document.querySelector("h1").textContent === "noteÜwrote");
+  // });
 });

@@ -14,6 +14,6 @@ describe('note list view', function(){
   var noteView = new NoteListView(noteList.view());
 
   it('returns a string', function(){
-    expect.isTrue(noteView.render() === "<ul><li>Hello</li><li>World</li></ul>");
+    expect.isTrue(noteView.renderNotes() === "<ul><li>Hello</li><li>World</li></ul>");
   });
 });

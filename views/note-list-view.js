@@ -6,7 +6,7 @@
   }
 
   NoteListView.prototype = {
-    render: function() {
+    renderNotes: function() {
       var content = '<ul>';
       for(i = 0; i < this.noteList.length; i++) {
         content += '<li>' + this.noteList[i] + '</li>';

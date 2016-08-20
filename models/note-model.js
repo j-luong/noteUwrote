@@ -4,5 +4,5 @@
     this.message = message;
   }
 
-exports.note = Note;
+exports.Note = Note;
 })(this);

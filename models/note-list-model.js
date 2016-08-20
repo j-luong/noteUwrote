@@ -1,5 +1,3 @@
-var Note = this.note;
-
 (function(exports) {
 
   function NoteList() {
@@ -7,12 +5,12 @@ var Note = this.note;
   }
 
   NoteList.prototype = {
-    add: function(message) {
+    addNote: function(message) {
       var note = new Note(message);
       this.notes.push(note);
     },
 
-    view: function() {
+    viewNotes: function() {
       return this.notes;
     }
   };

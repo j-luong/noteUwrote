@@ -1,17 +1,15 @@
-(function(exports) {
-  function NoteListView(noteList) {
-    this.noteList = noteList;
-  }
+var NoteListView = (function(noteList) {
+  noteList = noteList;
 
-  NoteListView.prototype = {
+  return {
     renderNotes: function() {
       var content = '<ul>';
-      for(i = 0; i < this.noteList.length; i++) {
-        content += '<li>' + this.noteList[i].substring(0, 20) + '</li>';
+      for(i = 0; i < noteList.view().length; i++) {
+        content += '<li>' + noteList.view()[i].substring(0, 20) + '</li>';
       }
       content += '</ul>';
+
       return content;
-   }
-  };
-  exports.noteListView = NoteListView;
-})(this);
+    }
+  }
+});

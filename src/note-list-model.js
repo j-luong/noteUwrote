@@ -1,5 +1,6 @@
 var NoteList = (function() {
-  var noteMessages = [];
+  notes = [];
+  noteMessages = [];
 
   function storeNote(note) {
      var message = note.printNote();
@@ -11,9 +12,9 @@ var NoteList = (function() {
 
   return {
     add: function(message) {
-      var noteMessage = new Note(message);
-      // storeNote(noteMessage);
-      noteMessages.push(noteMessage.showMessage());
+      var note = new Note(message);
+      notes.push(note);
+      noteMessages.push(note.showMessage());
     },
 
     view: function() {

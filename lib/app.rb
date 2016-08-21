@@ -1,7 +1,7 @@
 ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
-require './ruby_models/note'
+require './models/note'
 
 class NoteUwrote < Sinatra::Base
   get '/' do

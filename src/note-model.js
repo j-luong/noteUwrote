@@ -4,6 +4,10 @@ var Note = (function(message) {
   return {
     showMessage: function() {
       return noteMessage;
+    },
+
+    showId: function() {
+      return noteId;
     }
   };
 });

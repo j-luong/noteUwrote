@@ -20,6 +20,7 @@ describe("note-list-model", function(){
     noteList.add("Hello");
     noteList.add("World");
     noteList.add("!!!")
+
     expect(noteList.view()).toEqual(["Hello", "World", "!!!"]);
   })
 });

@@ -13,6 +13,7 @@ var NoteList = (function() {
   return {
     add: function(message) {
       var note = new Note(message);
+
       notes.push(note);
       noteMessages.push(note.showMessage());
     },
@@ -21,4 +22,4 @@ var NoteList = (function() {
       return noteMessages;
     }
   };
-})();
+});

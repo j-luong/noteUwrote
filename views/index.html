@@ -3,32 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>noteÜwrote</title>
-    <script src="../models/note-model.js"></script>
-    <script src="../models/note-list-model.js"></script>
-    <script src="./note-list-view.js"></script>
-    <script src="../controllers/note-controller.js"></script>
+    <script src="../src/note-model.js"></script>
+    <script src="../src/note-list-model.js"></script>
+    <script src="../src/note-list-view.js"></script>
+    <script src="../src/note-controller.js"></script>
   </head>
 
   <body>
     <div class="container">
       <div class="col-md-6 col-md-offset-3">
         <h1 class="text-center">
-          <span style="color:#555;">note</span><b>Ü</b><span style="color:#555;">wrote</span>
+          noteÜwrote
         </h1>
-      <form class="clearfix">
-        <div class="form-group">
-          <label for="noteMessage">Your Note</label>
-          <textarea name="noteMessage" id="note-message" class="form-control" cols="30" rows="10" placeholder="Type your note here..." required></textarea>
-        </div>
-        <button type="submit" id="save-note-button" class="btn btn-primary btn-lg pull-right">Save</button>
-      </form>
-      <br>
-      <div id="messages" class="well">
-
+        <form class="clearfix">
+          <div class="form-group">
+            <label for="noteMessage">Your Note</label>
+            <textarea name="noteMessage" id="note-message" class="form-control" cols="30" rows="10" placeholder="Type your note here..." required></textarea>
+          </div>
+          <button type="submit" id="save-note-button" class="btn btn-primary btn-lg pull-right">Save</button>
+        </form>
+        <br>
+        <div id="messages" class="well"></div>
       </div>
     </div>
-  </div>
-  <!-- JS Files -->
-  <script src="../controllers/note-controller.js"></script>
-</body>
+  </body>
+
 </html>

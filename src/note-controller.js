@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
       noteList.add(noteMessage);
       document.getElementById('messages').innerHTML = view.renderNotes();
     })
-  }
+  };
 
   function makeUrlChangeShowNoteForCurrentPage() {
     window.addEventListener("hashchange", showNoteForCurrentPage);
